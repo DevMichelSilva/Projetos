@@ -1,0 +1,130 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;}
+
+body {
+    background-color:rgb(237, 233, 233);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+header {
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+header img {
+  width: 100px;
+}
+
+nav {
+  background-color: black;
+  color: #fff;
+  padding: 30px;
+  text-align: center;
+}
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+nav ul li {
+  display: inline;
+  margin-right: 20px;}
+
+.container {
+    width: 100%;
+    overflow-x: hidden;
+  }
+  
+  .cards-wrapper {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+  }
+  
+.card {
+        flex: 0 0 auto;
+        width: 300px; /* Defina a largura desejada para cada cartão */
+        margin-right: 20px;
+        scroll-snap-align: start;
+        border: 1px solid lightblue; /* Adiciona uma borda cinza de 1px */
+        border-radius: 15px;
+        text-align: center;
+        box-shadow: 0 1px 8px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra suave */
+        background-color: white;
+        padding-bottom: 3%;
+        padding-top: 5%;
+}
+
+
+  a {
+    text-decoration: none;
+    color: white;
+  }
+
+  button {
+    border-radius: 10px;
+    border: 1px;
+    background-color: lightblue;
+    box-shadow: 0 1px 8px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra suave */
+    border: 1px solid black;
+    padding: 5px 10px;
+   
+  }
+
+  img {
+    width: 200px;
+  }
+
+  section {
+    padding-left: 5%;
+    padding-top: 5%;
+    padding-bottom: 1%;
+  }
+
+  .cartao {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: lightblue;
+    padding: 0;
+
+  }
+
+  .cartao img {
+    width: 50px;
+    padding-left: 10px;
+  }
+
+  .cartao h1 {
+    font-size: 18px;
+    padding-right: 0;
+    padding-left: 20px;
+  }
+
+  hr {
+    background-color: lightblue;
+    height: 1px;
+  }
+
+    .rating {
+      unicode-bidi: bidi-override;
+      direction: rtl;
+      text-align: center;
+      padding-top: 10px;
+    }
+    .rating > span {
+      display: inline-block;
+      position: relative;
+      width: 1.1em;
+      color: blue; /* Cor das estrelas */
+    }
+    .rating > span:before {
+      content: "\2605";
+      position: absolute;
+      color: lightblue; /* Cor das estrelas preenchidas */
+    }
+
+  
